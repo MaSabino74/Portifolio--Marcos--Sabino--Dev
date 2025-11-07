@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --cor-clara: #f8f9fa;
+    --cor-principal: #007bff;
+    --cor-secundaria: #343a40;
+    --cor-hover:#155DFC;
+    --cor-escura: #0a0a0a
+}
+body {
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+}
+/* --- ESTILOS DO CABEÇALHO (HEADER) E NAVEGAÇÃO --- */
+header {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: var(--cor-secundaria);
+    padding: 15px 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0; 
+}
+
+header a{
+    text-decoration: none;
+    color: var(--cor-clara);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+header a:hover {
+    color: var(--cor-hover);
+    text-decoration: underline;
+}
+
+/* --- ESTILOS DA SEÇÃO PRINCIPAL (HERO) --- */
+.principal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 50px;
+    min-height: 80vh;
+}
+
+.principla div h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.principal div h1 span{
+    color: var(--cor-principal);
+}
+
+.principal div p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+/* --- ESTILOS DA IMAGEM --- */
+
+.container-imgprincipal img {
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+ 
+/* --- ESTILOS DO BOTÃO --- */
+.botão {
+    text-decoration: none;
+    background-color: var(--cor-principal);
+    color: var(--cor-clara);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.botão:hover {
+    background-color:var(--cor-hover);
+    transform: scale(1.05);
+}
+/* --- ESTILOS DA SEÇÃO DE PROJETOS --- */
+.secao{
+    padding: 80px 50px;    
+}

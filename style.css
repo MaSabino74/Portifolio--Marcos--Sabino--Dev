@@ -177,3 +177,112 @@ header a:hover {
 .viewProject:hover{
     background-color:#0056b3;
 }
+/* --- ESTILOS DO CONTÊINER PRINCIPAL "SOBRE MIM" --- */
+.sobre-mim{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* --- ESTILOS DA FOTO DE PERFIL --- */
+.foto-perfil {
+    flex: 0 0 250px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+}
+
+.foto-perfil img {
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid var(--cor-principal);
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.4);
+    display: block;
+}
+
+/* --- ESTILOS DO CONTEÚDO DE TEXTO --- */
+.conteudo-sobre {
+    flex: 1;
+    min-width: 300px;
+    background-color: var()
+}
+
+.conteudo-sobre p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* --- ESTILOS DAS HABILIDADES (TAGS) --- */
+.habilidades {
+    flex-basis: 100%;
+    margin-top: 30px;
+    border-top: 2px solid var(--cor-clara);
+    padding-top: 20px;
+}
+
+.tag-habilidades {
+    display: inline-block;
+    background-color: var(--cor-principal);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+/* --- ESTILOS DO CONTÊINER DE TEXTO DO CONTATO --- */
+.contato {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+.contato p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+/* --- ESTILOS DO CONTÊINER DE REDES SOCIAIS --- */
+/* --- Container dos Ícones --- */
+.rede {
+    display: flex; 
+    justify-content: center; 
+    padding: 20px 0;
+}
+
+/* --- Estilo Base dos Ícones --- */
+.rede a i {
+    font-size: 36px; 
+    color: #555; 
+    cursor: pointer; 
+    transition: all 0.3s ease;
+}
+
+/* --- Efeitos Hover Específicos por Rede Social --- */
+
+/* LinkedIn */
+.fa-square-linkedin:hover {
+    color: #0A66C2; /* Cor oficial do LinkedIn (Azul) */
+    transform: translateY(-3px); /* Pequeno movimento para cima */
+}
+
+/* GitHub */
+.fa-square-github:hover {
+    color: #333; /* Cor oficial do GitHub (Preto/Cinza Escuro) */
+    transform: translateY(-3px);
+}
+
+/* E-mail */
+.fa-envelope:hover {
+    color: #D93025; /* Um vermelho do Gmail/Google para representar */
+    transform: translateY(-3px);
+}
+
+/* WhatsApp */
+.fa-square-whatsapp:hover {
+    color: #25D366; /* Cor oficial do WhatsApp (Verde) */
+    transform: translateY(-3px);
+}

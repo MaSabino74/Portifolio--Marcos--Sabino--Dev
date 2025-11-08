@@ -1,0 +1,257 @@
+/* --- BREAKPOINT: Telas Grandes (até 992px de largura) --- */
+@media (max-width: 992px) {
+    /* Ajustes Gerais para um pouco mais de espaço */
+    body {
+        padding: 0 15px; /* Adiciona um pequeno padding lateral no corpo */
+    }
+
+    /* Header */
+    header ul {
+        justify-content: space-around;
+        padding: 15px 0;
+    }
+
+    header ul li a {
+        font-size: 1em; /* Leve redução no tamanho do texto do menu */
+    }
+
+    /* Seção Principal */
+    .principal {
+        padding: 60px 20px;
+        gap: 30px; /* Reduz o espaço entre os elementos */
+    }
+
+    .principal h1 {
+        font-size: 3em; /* Reduz o título principal */
+    }
+
+    .principal p {
+        font-size: 1.1em; /* Ajusta o parágrafo */
+    }
+
+    .container-imgprincipal img {
+        max-width: 90%; /* Ajusta o tamanho da imagem */
+    }
+
+    /* Projetos */
+    .grade-projetos {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Garante pelo menos uma coluna com largura mínima */
+        gap: 25px;
+    }
+
+    /* Sobre Mim */
+    .sobre-mim {
+        gap: 30px;
+    }
+
+    .foto-perfil img {
+        max-width: 250px; /* Ajusta a foto de perfil */
+    }
+
+    .conteudo-sobre p {
+        font-size: 1em;
+    }
+
+    .habilidades {
+        justify-content: center; /* Centraliza as tags de habilidades */
+    }
+
+    .tag-habilidades {
+        font-size: 0.9em; /* Ajusta o tamanho das tags */
+        padding: 8px 15px;
+    }
+
+    /* Contato e Rede Social (Ícones) */
+    .contato p {
+        font-size: 1em;
+    }
+
+    .rede {
+        gap: 15px;
+    }
+
+    .rede a i {
+        font-size: 32px; /* Mantém um bom tamanho para tablets */
+    }
+}
+
+
+/* --- BREAKPOINT: Telas de Tablet (até 768px de largura) --- */
+@media (max-width: 768px) {
+    /* Ajustes Gerais */
+    .titulo-secao {
+        font-size: 2.2em; /* Reduz o tamanho dos títulos de seção */
+        margin-bottom: 30px;
+    }
+
+    /* Header */
+    header ul {
+        flex-direction: column; /* Menu vira coluna */
+        align-items: center; /* Centraliza os itens do menu */
+        padding: 10px 0;
+    }
+
+    header ul li {
+        margin: 8px 0; /* Espaçamento vertical entre os itens do menu */
+    }
+    
+    header ul li a {
+        padding: 8px 15px; /* Aumenta a área clicável */
+        display: block;
+    }
+
+    /* Seção Principal */
+    .principal {
+        flex-direction: column; /* Imagem e texto um abaixo do outro */
+        text-align: center;
+        padding: 50px 20px;
+    }
+    
+    .principal > div:first-child { /* Conteúdo textual */
+        order: 2; /* Texto abaixo da imagem */
+    }
+
+    .container-imgprincipal {
+        order: 1; /* Imagem acima do texto */
+        margin-bottom: 30px;
+    }
+    
+    .principal h1 {
+        font-size: 2.5em; /* Reduz ainda mais o título */
+        line-height: 1.2;
+    }
+
+    .principal p {
+        font-size: 1em;
+    }
+
+    .botão {
+        padding: 12px 25px; /* Ajusta o botão */
+        font-size: 0.95em;
+    }
+
+    /* Projetos */
+    .grade-projetos {
+        grid-template-columns: 1fr; /* Força uma única coluna de projetos */
+        padding: 0 10px;
+    }
+
+    .card-projeto {
+        margin-bottom: 20px; /* Espaçamento entre os cards */
+    }
+
+    .card-projeto img {
+        height: 200px; /* Altura fixa para as imagens dos projetos */
+        object-fit: cover; /* Garante que a imagem preencha o espaço */
+    }
+    
+    .conteudo-projeto h3 {
+        font-size: 1.4em;
+    }
+
+    .conteudo-projeto p {
+        font-size: 0.9em;
+    }
+
+    /* Sobre Mim */
+    .sobre-mim {
+        flex-direction: column; /* Foto e texto em coluna */
+        align-items: center; /* Centraliza tudo */
+    }
+
+    .foto-perfil {
+        margin-bottom: 25px;
+    }
+
+    .foto-perfil img {
+        max-width: 180px; /* Reduz ainda mais a foto */
+    }
+
+    .conteudo-sobre {
+        text-align: center;
+    }
+
+    .habilidades {
+        flex-wrap: wrap; /* Permite que as tags quebrem linha */
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .tag-habilidades {
+        margin: 5px; /* Espaçamento entre as tags */
+    }
+
+    /* Contato */
+    .contato p {
+        font-size: 0.95em;
+    }
+
+    /* Ícones Sociais (Rede) */
+    .rede {
+        gap: 10px; /* Reduz o espaçamento */
+        padding: 15px 0;
+    }
+
+    .rede a i {
+        font-size: 28px; /* Reduz para o tamanho de celular */
+    }
+
+    /* Footer */
+    footer p {
+        font-size: 0.8em;
+    }
+}
+
+
+/* --- BREAKPOINT: Telas de Smartphone (até 576px de largura) --- */
+@media (max-width: 576px) {
+    /* Ajustes Finais para telas muito pequenas */
+    .titulo-secao {
+        font-size: 1.8em; /* Títulos menores */
+        margin-bottom: 25px;
+    }
+
+    /* Seção Principal */
+    .principal h1 {
+        font-size: 2em; /* Título principal menor */
+    }
+
+    .principal p {
+        font-size: 0.9em;
+    }
+
+    .botão {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    /* Cards de Projeto */
+    .card-projeto img {
+        height: 180px; /* Imagens um pouco menores */
+    }
+    
+    .conteudo-projeto h3 {
+        font-size: 1.2em;
+    }
+    
+    .conteudo-projeto p {
+        font-size: 0.85em;
+    }
+    
+    .viewProject {
+        font-size: 0.85em;
+    }
+
+    /* Ícones Sociais (Rede) */
+    .rede a i {
+        font-size: 24px; /* Ícones ainda menores para não quebrar */
+    }
+
+    /* Footer */
+    footer {
+        padding: 15px 10px;
+    }
+    footer p {
+        font-size: 0.75em;
+    }
+}

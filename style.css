@@ -286,3 +286,16 @@ header a:hover {
     color: #25D366; /* Cor oficial do WhatsApp (Verde) */
     transform: translateY(-3px);
 }
+/* --- ESTILOS DO RODAPÉ (FOOTER) --- */
+footer {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-clara);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+footer a {
+    color: var(--cor-clara);
+    text-decoration: none;
+    cursor: pointer;
+}

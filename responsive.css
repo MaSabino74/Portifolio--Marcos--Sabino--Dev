@@ -86,6 +86,7 @@
 
     /* Header */
     header ul {
+        display: none;
         flex-direction: column; /* Menu vira coluna */
         align-items: center; /* Centraliza os itens do menu */
         padding: 10px 0;

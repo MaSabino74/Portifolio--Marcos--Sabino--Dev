@@ -46,6 +46,9 @@ header a:hover {
     color: var(--cor-hover);
     text-decoration: underline;
 }
+.menu-desktop {
+    display: none;
+}
 
 /* --- ESTILOS DA SEÇÃO PRINCIPAL (HERO) --- */
 .principal {
